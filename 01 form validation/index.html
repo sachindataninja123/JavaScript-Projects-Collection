@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212121;
+
+        }
+
+        form {
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+        }
+
+        #hide {
+            color: #fff;
+            font-size: 20px;
+            display: none;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 10px 15px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <input id="name" type="text" placeholder="name">
+        <br>
+        <div id="hide">
+            <p>please enter a letter of name above 5</p>
+        </div>
+        <input type="email" placeholder="email">
+        <br>
+        <input type="password" placeholder="password">
+        <br>
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+        </select>
+        <br>
+        <textarea>Tell about us</textarea>
+        <br>
+        <input type="submit">
+    </form>
+
+
+    <script>
+        var nm = document.getElementById("name");
+        var form = document.getElementById("form");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            if (nm.value.length <= 2) {
+                document.getElementById("hide").style.display = "block";
+            } else {
+                document.getElementById("hide").style.display = "none";
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

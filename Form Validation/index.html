@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation in Js</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <header class="signup-header">
+            <h1>Sign up</h1>
+            </header>
+            <main class="signup-body">
+                <form action="#" id="myForm">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="myname" placeholder="Type Name here">
+                        <i class="fa-solid"></i>
+                        <span id="nameErr"></span>
+                    </div>
+                      <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="myemail" placeholder="Type Email here">
+                        <i class="fa-solid"></i>
+                        <span id="emailErr"></span>
+                    </div>
+                      <div>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" name="mypassword" placeholder="At least 8 character">
+                        <i class="fa-solid"></i>
+                        <span id="passwordErr"></span>
+                    </div>
+                     <div>
+                        <label for="RePassword">Confirm Password</label>
+                        <input type="text" id="RePassword" name="mypassword" placeholder="Re Enter your password">
+                        <i class="fa-solid"></i>
+                        <span id="RePasswordErr"></span>
+                    </div>
+                    <div>
+                        <input type="submit" value="Create Account" id="submitBtn">
+                    </div>
+                </form>
+            </main>
+            <footer class="signup-footer">
+                <p>Alreay have an account? <a href="">Login</a> </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

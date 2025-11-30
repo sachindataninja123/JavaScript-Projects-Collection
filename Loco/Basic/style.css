@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(53, 138, 109);
+}
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(37, 90, 72);
+}
+.page2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}

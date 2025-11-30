@@ -1,0 +1,19 @@
+body{
+    color: black;
+}
+.container{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.task-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:30px;
+}
+.task-list li{
+    font-size: 1.2rem;
+}

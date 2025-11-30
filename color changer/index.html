@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Color Changer</h1>
+        <div class="box">
+            <button class="randomBtn">Random Color</button>
+            <input id="colorInput" type="text" placeholder="Enter a color or hex">
+            <button class="applyBtn">Apply color</button>
+
+        </div>
+        <p class="currColor">Current Color : <span class="currColorValue">#7fffd4</span></p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+
+        let randomClickBtn = document.querySelector(".randomBtn");
+        let applyClickBtn = document.querySelector(".applyBtn");
+        let inputBox = document.getElementById("colorInput");
+        let currColorValue = document.querySelector(".currColorValue");
+        let container = document.querySelector(".container");
+
+        function changeColor(color) {
+            container.style.backgroundColor = color;
+            currColorValue.innerHTML = inputBox.value;
+         
+        }
+
+        function applyColor() {
+            let color = inputBox.value;
+            changeColor(color);
+               inputBox.value = "";
+        }
+
+        function hexColor() {
+            let hexValues = "0123456789abcdef";
+            let colors = "#";
+            for (let i = 0; i < 6; i++) {
+                colors = colors + hexValues[Math.floor(Math.random() * 16)];
+            }
+            return colors;
+        }
+
+        function randomColor() {
+            let color = hexColor();
+            console.log(color);
+            changeColor(color);
+            currColorValue.innerHTML = color;
+        }
+
+
+        randomClickBtn.addEventListener("click", randomColor);
+        applyClickBtn.addEventListener("click", applyColor);
+
+
+    </script>
+</body>
+
+</html>

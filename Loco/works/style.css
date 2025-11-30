@@ -1,0 +1,82 @@
+@font-face {
+  font-family: work;
+  src: url(./FreightBigProLight-Italic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: work;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.loader {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader h1 {
+  font-size: 6vw;
+  line-height: 5vw;
+  letter-spacing: -3px;
+  font-weight: 100;
+  position: relative;
+  z-index: 9;
+}
+.loader video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 7;
+}
+.yellow {
+  background-color: #f5e41b;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+}
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.page1 h1 {
+  font-size: 6vw;
+  line-height: 5vw;
+  letter-spacing: -3px;
+  font-weight: 100;
+}
+.page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5e41b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+}
+.page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}

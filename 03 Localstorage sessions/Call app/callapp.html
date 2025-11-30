@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call App UI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="controls">
+      <button id="addForm">+</button>
+      <button id="upbtn">↑</button>
+      <button id="downbtn">↓</button>
+    </div>
+
+    <div class="card-stack">
+
+    </div>
+
+    <div class="colors">
+      <span class="color-black"></span>
+      <span class="color-purple"></span>
+      <span class="color-blue"></span>
+      <span class="color-teal"></span>
+    </div>
+  </div>
+
+
+
+  <div class="call-form" id="callForm">
+    <h3>New Call</h3>
+
+    <!-- Start of the form -->
+    <form>
+      <input required type="text" placeholder="https://example.com/photo.jpg" name="photo" />
+      <input required type="text" placeholder="Full Name" name="fullname" />
+      <input required type="text" placeholder="Home Town" name="hometown" />
+      <input required type="text" placeholder="Purpose" name="purpose" />
+
+      <div class="radio-group">
+        <label><input required type="radio" name="category" value="Emergency" /> Emergency</label><br />
+        <label><input required type="radio" name="category" value="Important" /> Important</label><br />
+        <label><input required type="radio" name="category" value="Urgent" /> Urgent</label><br />
+        <label><input required type="radio" name="category" value="No Rush" /> No Rush</label>
+      </div>
+
+      <button type="submit" id="submit" class="btn-primary">Create Note</button>
+      <button id="close" class="btn-close">Close</button>
+    </form>
+    <!-- End of the form -->
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

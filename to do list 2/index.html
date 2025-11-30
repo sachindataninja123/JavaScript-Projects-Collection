@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>To do list</h1>
+        <input type="text" placeholder="Enter Task" id="inputField">
+        <button id="submitBtn">Add</button>
+
+        <div>
+            <ul class="taskList"></ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <!-- <script>
+
+
+        let inputTask = document.getElementById("inputField");
+        let addTaskBtn = document.getElementById("submitBtn");
+        let taskList = document.querySelector(".taskList")
+
+        function addTask() {
+            // console.log("clicked");
+            if (inputTask.value === "") {
+                alert("You must have to write something!");
+                return;
+            } else {
+                let li = document.createElement("li");
+                li.innerText = inputTask.value;
+                taskList.appendChild(li);
+
+                // li.addEventListener("click", function () {
+                //     li.style.textDecoration = "line-through";
+                // })
+
+                let span = document.createElement("span");
+                span.innerText = "\u00d7";
+                li.appendChild(span);
+
+                // span.addEventListener("click", function (e) {
+                //     e.preventDefault();
+                //     li.remove();
+                // })
+            }
+
+            inputTask.value = "";
+            saveData();
+
+        }
+
+        taskList.addEventListener("click", function(e) {
+            if(e.target.tagName === "LI"){
+                 e.target.style.textDecoration = "line-through";
+                // e.target.classList.toggle("checked");
+                saveData();
+            } else if(e.target.tagName === "SPAN") {
+                 e.target.parentElement.style.display = "none";
+                 saveData();
+            }
+        })
+    addTaskBtn.addEventListener("click", addTask);
+
+    function saveData() {
+        localStorage.setItem("data",taskList.innerHTML );
+    }
+    function showTask() {
+        taskList.innerHTML = localStorage.getItem("data");
+    }
+    showTask();
+    </script> -->
+</body>
+
+</html>

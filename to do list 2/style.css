@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background: linear-gradient(90deg,pink, rgb(28, 28, 135));
+}
+.container h1{
+    font-size: 3rem;
+}
+.container{
+    margin-left: 300px;
+    height: 100vh;
+   margin-top: 100px;
+ width: 400px;
+ text-align: center;
+
+}
+input,button{
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.taskList li{
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.taskList li span{
+    position: absolute;
+    right: 100px;
+    top: 3px;
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
