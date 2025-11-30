@@ -19,7 +19,10 @@ Whether you're learning JavaScript or looking for project ideas, this repo can h
 | 7 | Golf Animated Website | ⭐⭐ Intermediate | This is a clone website of Golf webiste. |
 | 8 | Tic Tac Toe | ⭐⭐ Intermediate | Tic Tac Toe Game. |
 | 9 | Rejouice | ⭐⭐ Intermediate | It is a clone of real world animated Website. |
-| 10 | Temperature Convertor | ⭐⭐ Intermediate | Conerts Celcius into farenheit and vice-versa. |
+| 10 | Temperature Convertor | ⭐⭐ Intermediate | Converts Celcius into farenheit and vice-versa. |
+| 11 | Quiz Website | ⭐⭐ Intermediate | We play here a Quiz Game. And watch our Score. |
+| 12 | Login Page | ⭐⭐ Intermediate | Animated Login page. |
+*** OR MORE PROJECTS IN THIS REPO ***
 
 ## 🛠️ Technologies Used
 
