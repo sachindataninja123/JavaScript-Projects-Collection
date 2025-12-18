@@ -22,6 +22,7 @@ Whether you're learning JavaScript or looking for project ideas, this repo can h
 | 10 | Temperature Convertor | ⭐⭐ Intermediate | Converts Celcius into farenheit and vice-versa. |
 | 11 | Quiz Website | ⭐⭐ Intermediate | We play here a Quiz Game. And watch our Score. |
 | 12 | Login Page | ⭐⭐ Intermediate | Animated Login page. |
+| 13 | Todo-List With MockAPI | ⭐⭐ Intermediate | Users can add, view, edit, and delete tasks. Each task is saved in the MockAPI database, ensuring data persistence even after refreshing the page.|
 *** OR MORE PROJECTS IN THIS REPO ***
 
 ## 🛠️ Technologies Used
