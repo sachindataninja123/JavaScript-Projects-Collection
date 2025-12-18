@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  margin: 20px 0px;
+  color: #222;
+}
+.mainContainer {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 10px;
+}
+.inputContainer {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  flex-direction: column;
+  background-color: rgb(182, 100, 100);
+  padding: 10px;
+  border-radius: 5px;
+}
+.inputControl{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap:20px;
+}
+#inputText {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  font-size: 18px;
+}
+
+.addBtn {
+  padding: 10px 20px;
+  background-color: #000;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+}
+
+.addBtn:active {
+  transform: scale(0.95);
+}
+
+.editBtn {
+  padding: 10px 20px;
+  background-color: rgb(30, 30, 212);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+}
+.editBtn:active {
+  transform: scale(0.95);
+}
+
+.delBtn {
+  padding: 10px 20px;
+  background-color: red;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+}
+.delBtn:active {
+  transform: scale(0.95);
+}
+
+.saveBtn {
+  padding: 10px 20px;
+  background-color: rgb(27, 183, 27);
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  display: none;
+  border: none;
+}
+.saveBtn:active {
+  transform: scale(0.95);
+}
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* ✅ space between todos */
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(150, 148, 145);
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(24, 82, 85);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.todo p {
+  font-size: 25px;
+}
+
+#editText{
+  display: none;
+  padding: 10px ;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
